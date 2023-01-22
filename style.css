@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1 {
@@ -46,6 +46,9 @@ p {
   box-shadow: var(--box-shadow);
   color: white;
 }
+.primary-link:hover {
+  color: white;
+}
 
 .secondary-link {
   border-radius: 4px;
@@ -82,10 +85,20 @@ p {
   text-decoration: underline;
 }
 @media (max-width: 576px) {
-  .project-image {
-    display: none;
-  }
   h1 {
-    font-size: 50px;
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .primary-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
   }
 }
